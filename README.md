@@ -1,20 +1,17 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+<img width="1200" height="475" alt="Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Typeshii - Font Manager
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/01b72fe1-2269-425b-8add-39b73beff726
+A personal Google Fonts manager. Copy a link, save a font, and get optimized code back.
 
 ## Run Locally
 
 **Prerequisites:**  Node.js
 
-
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Configure your environment variables in [.env.local](.env.local)
 3. Run the app:
    `npm run dev`
