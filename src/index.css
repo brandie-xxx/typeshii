@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-system-blue: #1e6c38; /* Jungle Primary */
+  --color-system-blue-hover: #16522a; /* Darker green */
+  --color-vibrant: #40c463; /* Dynamic electric green highlights */
+  --color-earth: #d4b069; /* Warm gold/earth for saved/bookmarks */
+  --color-bark: #3b2a1a; /* Rich bark brown */
+  --color-bg-primary: #05140a; /* Deepest jungle background */
+  --color-bg-secondary: #0b2915; /* Emerald secondary surface */
+  --color-surface: rgba(11, 41, 21, 0.55); /* Glass surface of card container */
+  --color-text-primary: #f2fbf5; /* Pearl-emerald white */
+  --color-text-secondary: #8da696; /* Elegant soft sage green for descriptions */
+  --color-separator: rgba(64, 196, 99, 0.2); /* Soft vibrant borders */
+  --color-success: #40c463;
+  --color-warning: #d4b069;
+  --color-error: #ff4d4d;
+
+  --shadow-subtle: 0px 4px 16px rgba(5, 20, 10, 0.6);
+  --shadow-medium: 0px 8px 32px rgba(5, 20, 10, 0.8);
+  --shadow-prominent: 0px 16px 48px rgba(5, 20, 10, 0.95);
+
+  --radius-button: 9999px;
+  --radius-card: 24px;
+  --radius-modal: 28px;
+  --radius-input: 16px;
+}
+
+@layer base {
+  :root {
+    --background: 140 60% 5%;       /* Deep jungle #05140a */
+    --foreground: 140 30% 95%;      /* Pearl #f2fbf5 */
+
+    --card: 140 55% 10%;            /* Surface #0b2915 */
+    --card-foreground: 140 30% 95%;
+
+    --popover: 140 50% 8%;
+    --popover-foreground: 140 30% 95%;
+
+    --primary: 140 57% 28%;         /* #1e6c38 */
+    --primary-foreground: 140 30% 95%;
+
+    --secondary: 142 53% 51%;       /* #40c463 */
+    --secondary-foreground: 140 10% 5%;
+
+    --muted: 140 40% 12%;           /* Subtle deep green */
+    --muted-foreground: 140 20% 70%; 
+
+    --accent: 40 56% 62%;           /* #d4b069 */
+    --accent-foreground: 140 10% 5%;
+
+    --border: 140 30% 15%;
+    --input: 140 30% 15%;
+    --ring: 142 53% 51%;            /* #40c463 */
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-sans antialiased selection:bg-vibrant selection:text-bg-primary;
+    background: radial-gradient(circle at 50% 0%, #0b2915 0%, #05140a 100%);
+    min-height: 100vh;
+  }
+}
+
+.glass {
+  @apply backdrop-blur-xl bg-surface border border-separator;
+}
