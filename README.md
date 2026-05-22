@@ -1,5 +1,5 @@
 
-# Typeshii - Font Manager
+# typeshii - Font Manager
 
 A personal fonts manager. Copy a link, save a font, and get optimized code back.
 
