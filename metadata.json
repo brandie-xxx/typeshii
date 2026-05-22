@@ -2,7 +2,5 @@
   "name": "Typeshii",
   "description": "Personal Google Fonts manager. Copy a link, save a font, and get optimized code back.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": []
 }
