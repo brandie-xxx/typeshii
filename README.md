@@ -1,10 +1,7 @@
-<div align="center">
-<img width="1200" height="475" alt="Banner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
 
 # Typeshii - Font Manager
 
-A personal Google Fonts manager. Copy a link, save a font, and get optimized code back.
+A personal fonts manager. Copy a link, save a font, and get optimized code back.
 
 ## Run Locally
 
